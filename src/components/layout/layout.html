@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小区停车系统</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        .layout {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* 侧边栏样式 */
+        .sidebar {
+            width: 256px;
+            background-color: #001529;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .logo {
+            padding: 16px 24px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 1px solid #002140;
+            margin-bottom: 16px;
+        }
+
+        .menu {
+            list-style: none;
+        }
+
+        .menu-item {
+            padding: 12px 24px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .menu-item:hover {
+            background-color: #1890ff;
+        }
+
+        .menu-item.active {
+            background-color: #1890ff;
+        }
+
+        /* 主要内容区域样式 */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 顶部导航栏样式 */
+        .header {
+            height: 64px;
+            background-color: #fff;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #1890ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        /* 内容区域样式 */
+        .content {
+            flex: 1;
+            padding: 24px;
+            background-color: #f0f2f5;
+        }
+
+        .page-header {
+            background-color: #fff;
+            padding: 16px 24px;
+            margin-bottom: 24px;
+            border-radius: 4px;
+        }
+
+        .page-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000d9;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <!-- 侧边栏 -->
+        <div class="sidebar">
+            <div class="logo">小区停车系统</div>
+            <ul class="menu">
+                <li class="menu-item active">车位管理</li>
+                <li class="menu-item">车辆管理</li>
+                <li class="menu-item">收费管理</li>
+                <li class="menu-item">统计报表</li>
+                <li class="menu-item">用户管理</li>
+                <li class="menu-item">设备管理</li>
+                <li class="menu-item">智能寻车</li>
+            </ul>
+        </div>
+
+        <!-- 主要内容区域 -->
+        <div class="main-content">
+            <!-- 顶部导航栏 -->
+            <div class="header">
+                <div class="breadcrumb">车位管理</div>
+                <div class="user-info">
+                    <div class="user-avatar">管</div>
+                    <span>管理员</span>
+                </div>
+            </div>
+
+            <!-- 内容区域 -->
+            <div class="content">
+                <div class="page-header">
+                    <h1 class="page-title">车位管理</h1>
+                </div>
+                <!-- 具体页面内容将在这里渲染 -->
+                <div class="page-content">
+                    <!-- 页面内容将根据不同的功能模块动态加载 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
