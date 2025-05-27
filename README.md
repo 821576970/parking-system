@@ -1,2 +1,3 @@
-# parking-system
-A web-based parking management system
+# Parking System
+
+A web-based parking management system.
